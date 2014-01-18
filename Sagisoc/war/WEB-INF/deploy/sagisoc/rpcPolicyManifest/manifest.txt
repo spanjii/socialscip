@@ -1,0 +1,3 @@
+# Module sagisoc
+# RPC service class, partial path of RPC policy file
+sagisoc.client.GreetingService, B19B22062C26D32694A7D4B4B351C97F.gwt.rpc

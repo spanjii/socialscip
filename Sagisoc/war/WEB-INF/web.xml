@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+  
+  <servlet>
+    <servlet-name>welcome</servlet-name>
+    <servlet-class>sagisoc.WelcomeServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sagisoc</servlet-name>
+    <servlet-class>sagisoc.FusionSagisocServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>sagisoc</servlet-name>
+    <url-pattern>/fusion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>researcher</servlet-name>
+    <servlet-class>sagisoc.ResearcherVideosServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>researcher</servlet-name>
+    <url-pattern>/researcher_videos</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>addnewresearcher</servlet-name>
+    <servlet-class>sagisoc.NewResearcherServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addnewresearcher</servlet-name>
+    <url-pattern>/add_researcher</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>removeresearcher</servlet-name>
+    <servlet-class>sagisoc.RemoveResearcher</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>removeresearcher</servlet-name>
+    <url-pattern>/remove_researcher</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>welcome</servlet-name>
+    <servlet-class>sagisoc.WelcomeServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportdata</servlet-name>
+    <servlet-class>sagisoc.ExportData</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+    <servlet-name>exportdata</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>newrequest</servlet-name>
+    <servlet-class>sagisoc.NewRequests</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>newrequest</servlet-name>
+    <url-pattern>/newrequest</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>signinadmin</servlet-name>
+    <servlet-class>sagisoc.SignInAdmin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>signinadmin</servlet-name>
+    <url-pattern>/first_signin_admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>testerIdCookies</servlet-name>
+    <servlet-class>sagisoc.GenerateId</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>testerIdCookies</servlet-name>
+    <url-pattern>/cookies</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>sagisoc.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/sagisoc/greet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>welcome</welcome-file>
+  </welcome-file-list>
+  
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+    <exception-type>
+          java.net.SocketTimeoutException
+    </exception-type>
+    <location>/welcome</location>
+</error-page>
+
+</web-app>

@@ -1,0 +1,72 @@
+
+table.videolist {
+    
+    border: 1px solid #31353e;
+    margin-left: auto;
+	margin-right: auto;
+	min-width: 700px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: arial, verdana, sans-serif;
+}
+
+td.videolist {
+	border: 1px solid #31353e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4095eb), color-stop(1, #1b6cbd) );
+	background:-moz-linear-gradient( center top, #4095eb 5%, #1b6cbd 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4095eb', endColorstr='#1b6cbd');
+	background-color:#4095eb;
+		padding:12px;
+		text-align:center;
+		border: 1px solid #FFF;
+}
+td.videolist:hover {
+	border: 1px solid #31353e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1b6cbd), color-stop(1, #1b6cbd) );
+	background:-moz-linear-gradient( center top, #1b6cbd 5%, #1b6cbd 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b6cbd', endColorstr='#1b6cbd');
+	background-color:#1b6cbd;
+		padding:12px;
+		text-align:center;
+		border: 1px solid #FFF;
+}
+
+#header {
+	text-align: center;
+}
+
+.pstyle {
+	text-align: center;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.pstylelink {
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.infotext {
+	width: 250px;
+}
+
+
+.govideo {
+	background-color:#0087FD;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 30px;
+	text-decoration:none;
+}.govideo:hover {
+	background-color:#4595DB;
+}.govideo:active {
+	position:relative;
+	top:1px;
+}
